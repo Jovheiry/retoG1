@@ -74,8 +74,7 @@ main article div button{
     font-size: 10px;
     color: grey;
     text-align: center;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;    
 }
 .sponsors-section{
     display: flex;
@@ -100,11 +99,7 @@ h3{
     margin-bottom: 20px;
     color: dimgrey;
 }
-.features-cards-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .feature-card{
     display: flex;
     flex-direction: column;
@@ -115,6 +110,8 @@ h3{
     border-width: 1px;
     border-style: solid;
     margin-bottom: 20px;
+    width: 90%;
+    height: 200px;
 }
 .feature-card h3{
     color: #025157;
@@ -139,6 +136,9 @@ h3{
     border: grey;
     border-width: 1px;
     border-style: solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
 }
 .users-section{
     display: flex;
@@ -197,6 +197,7 @@ h3{
 .table-c31{grid-area: t31;}
 .compare-section{
     width: 100%;
+    text-align: center;
 }
 .compare-section h2{
     text-align: center;
