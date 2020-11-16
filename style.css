@@ -4,7 +4,7 @@
     background: none;
 }
 
-header{
+header, section{
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 15px;
@@ -19,12 +19,14 @@ header nav{
 header nav ul li{
     display: inline-block;
 }
-
 header nav a{
     text-decoration: none;
     color: #025157;
 }
-
+header nav div{
+    text-align: center;
+    margin-right: 10px;
+}
 header nav div button{
     background-color:#025157;
     border:#025157;
@@ -36,22 +38,20 @@ header nav div button{
 
 main{
     display: flex;
-    flex-direction: row;
     padding: 40px;
 }
 main article{
     flex-direction: column;
-    width: 60%;
-}
-main video{
-    width: 40%;
 }
 main article h1{
     color: #025157;
-    width: 40%;
     margin-bottom: 30px;
 }
-
+main article p{
+    text-align: center;
+    color: gray;
+    font-size: 18px;
+}
 main article div{
     margin-bottom: 10px;
     margin-top: 30px;
@@ -61,31 +61,26 @@ main article div button{
     border-style: solid;
     border-radius: 5px;
     height: 40px;
+    width: 100%;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 30px;
 }
 .small-letter{
-    font-size: 10px;
     color: grey;
-    width: 50%;
 }
 .title-small{
     font-size: 10px;
     color: grey;
     text-align: center;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;    
 }
 .sponsors-section{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 40px;
     align-items: center;
-}
-.sponsors-section img{
-    height: 30px;
 }
 .features-section{
     display: flex;
@@ -93,70 +88,253 @@ main article div button{
     padding: 20px;
     text-align: center;
 }
-.features-section h2{
+h2{
     color: #025157;
+}
+h3{
+    color: gray;
 }
 .features-section p{
     font-size: 10px;
     margin-bottom: 20px;
     color: dimgrey;
 }
-.features-cards-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 .feature-card{
     display: flex;
     flex-direction: column;
 }
 .feature-card img{
-    width: 90%;
     border-radius: 5px;
     border: grey;
     border-width: 1px;
     border-style: solid;
     margin-bottom: 20px;
+    width: 100%;
 }
 .feature-card h3{
     color: #025157;
-    font-size: 15px;
     margin-bottom: 10px;
 }
 .feature-card p{
-    font-size: 10px;
     color: dimgrey;
 }
-
 .tools-section{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    text-align: center;
 }
 .tools-cards-container{
-    grid-template: repeat(4, 1fr) / 1fr;
+    grid-template: repeat(4, 1fr) / 1fr;   
 }
+.tools-card{
+    border-radius: 5px;
+    border: grey;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.users-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+}
+.users-section h2{
+    margin-bottom: 10px;
+}
+.users-section p{
+    text-align: left;
+    margin-bottom: 5px;
+}
+.users-section button{
+    margin-top: 10px;
+    background-color:#025157;
+    border:#025157;
+    border-style: solid;
+    border-radius: 5px;
+    height: 40px;
+    color: white;
+}
+.table-c1{grid-area: t1;}
+.table-c2{grid-area: t2;}
+.table-c3{grid-area: t3;}
+.table-c4{grid-area: t4;}
+.table-c5{grid-area: t5;}
+.table-c6{grid-area: t6;}
+.table-c7{grid-area: t7;}
+.table-c8{grid-area: t8;}
+.table-c9{grid-area: t9;}
+.table-c10{grid-area: t10;}
+.table-c11{grid-area: t11;}
+.table-c12{grid-area: t12;}
+.table-c13{grid-area: t13;}
+.table-c14{grid-area: t14;}
+.table-c15{grid-area: t15;}
+.table-c16{grid-area: t16;}
+.table-c17{grid-area: t17;}
+.table-c18{grid-area: t18;}
+.table-c19{grid-area: t19;}
+.table-c20{grid-area: t20;}
+.table-c21{grid-area: t21;}
+.table-c22{grid-area: t22;}
+.table-c23{grid-area: t23;}
+.table-c24{grid-area: t24;}
+.table-c25{grid-area: t25;}
+.table-c26{grid-area: t26;}
+.table-c27{grid-area: t27;}
+.table-c28{grid-area: t28;}
+.table-c29{grid-area: t29;}
+.table-c30{grid-area: t30;}
+.table-c31{grid-area: t31;}
+.compare-section{
+    width: 100%;
+    text-align: center;
+}
+.compare-section h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
 /** dispositivos pequeños en vista landscape (horizontal) */
-@media (max-width: 575px) {
- 
+@media (min-width: 576px) and (max-width:767px) {
+
+.small-letter{
+    font-size: 15px;
+ }
+ header nav ul li a{
+    font-size: 10px;
+ }
+ header nav img{
+     width: 30%;
+     margin-right: 20px;
+ }
+ header nav div a{
+     text-align: center;
+     margin-right: 0;
+ }
+ main{
+    flex-direction: column;
+    background-color: lavender;
+}
+main article{
+    width: 90%;
+}
+main video{
+    width: 90%;
+}
+main article h1{
+    width: 100%;
+}
+main article div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.small-letter{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.sponsors-section{
+    flex-wrap: wrap;
+}
+.sponsors-section img{
+    height: 100%;
+  }
+.features-section{
+    background-color: lavender;
+}
+.features-cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feature-card h3{
+    font-size: 35px;
+}
+.feature-card p{
+    font-size: 20px;
+}
+.tools-card{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.tools-card img{
+    width: 100px;
+}
+.tools-section h3{
+    font-size: 30px;
+}
+.users-section{
+    background-color: lavender;
+}
+.users-section h2{
+    font-size: 30px;
+    text-align: left;
+}
+.users-section p{
+    font-size: 20px;
+}
+.compare-table{
+    height: 1500px;
+    display: grid;
+    grid-gap: 10px;
+    background-color: khaki;
+    grid-row-gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    grid-template-areas: 
+    't1 t1 t1'
+    't2 t2 t2'
+    't3 t3 t3'
+    't4 t5 t6'
+    't7 t7 t7'
+    't8 t8 t8'
+    't9 t10 t11'
+    't12 t12 t12'
+    't13 t13 t13'
+    't14 t15 t16'
+    't17 t17 t17'
+    't18 t18 t18'
+    't19 t20 t21'
+    't22 t22 t22'
+    't23 t23 t23'
+    't24 t25 t26'
+    't27 t27 t27'
+    't28 t28 t28'
+    't29 t30 t31'
+    ;
 }
 
- /** dispositivos pequeños en vista landscape (horizontal) */
-@media (min-width: 576px and max-width: 767px) {
+.table-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.table-image img, .table-image p{
+    height: 20px;
+    width: 20px;
+    font-size: 8px;
+    margin-bottom: 5px;
+}
+
 
 }
-  
-  /** dispositivos medianos (tablets) */
-@media (min-width: 768px and max-width: 991px) {
 
-}
-  
-  /** dispositivos grandes (desktops) */
-@media (min-width: 992px and max-width: 1199px) {
-
-}
-  
-  /** dispositivos extra grandes (monitores grandes, tvs) */
-@media (min-width: 1200px) {
-
-}  
