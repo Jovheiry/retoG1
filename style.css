@@ -110,7 +110,8 @@ h3{
     border-width: 1px;
     border-style: solid;
     margin-bottom: 20px;
-    width: 100%;
+    width: 90%;
+    height: 200px;
 }
 .feature-card h3{
     color: #025157;
