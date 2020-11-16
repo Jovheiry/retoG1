@@ -359,3 +359,10 @@ main article div button{
 
 
 }
+
+@media (min-width: 576px) and (max-width:767px) {
+}
+
+
+@media (max-width: 575px) {
+}
