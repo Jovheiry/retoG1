@@ -206,7 +206,135 @@ h3{
 
 @media (min-width: 576px) and (max-width:767px) {
 
-}
+    .small-letter{
+        font-size: 15px;
+     }
+     header nav ul li a{
+        font-size: 10px;
+     }
+     header nav img{
+         width: 30%;
+         margin-right: 20px;
+     }
+     header nav div a{
+         text-align: center;
+         margin-right: 0;
+     }
+     main{
+        flex-direction: column;
+        background-color: lavender;
+    }
+    main article{
+        width: 90%;
+    }
+    main video{
+        width: 90%;
+    }
+    main article h1{
+        width: 100%;
+    }
+    main article div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .small-letter{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .sponsors-section{
+        flex-wrap: wrap;
+    }
+    .sponsors-section img{
+        height: 100%;
+      }
+    .features-section{
+        background-color: lavender;
+    }
+    .features-cards-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .feature-card h3{
+        font-size: 35px;
+    }
+    .feature-card p{
+        font-size: 20px;
+    }
+    .tools-card{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .tools-card img{
+        width: 100px;
+    }
+    .tools-section h3{
+        font-size: 30px;
+    }
+    .users-section{
+        background-color: lavender;
+    }
+    .users-section h2{
+        font-size: 30px;
+        text-align: left;
+    }
+    .users-section p{
+        font-size: 20px;
+    }
+    .compare-table{
+        height: 1500px;
+        display: grid;
+        grid-gap: 10px;
+        background-color: khaki;
+        grid-row-gap: 10px;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        grid-template-areas: 
+        't1 t1 t1'
+        't2 t2 t2'
+        't3 t3 t3'
+        't4 t5 t6'
+        't7 t7 t7'
+        't8 t8 t8'
+        't9 t10 t11'
+        't12 t12 t12'
+        't13 t13 t13'
+        't14 t15 t16'
+        't17 t17 t17'
+        't18 t18 t18'
+        't19 t20 t21'
+        't22 t22 t22'
+        't23 t23 t23'
+        't24 t25 t26'
+        't27 t27 t27'
+        't28 t28 t28'
+        't29 t30 t31'
+        ;
+    }
+    
+    .table-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .table-image img, .table-image p{
+        height: 20px;
+        width: 20px;
+        font-size: 8px;
+        margin-bottom: 5px;
+    }
+    
+    
+    }
 @media (min-width: 768px) {
 
 }
