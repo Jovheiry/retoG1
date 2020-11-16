@@ -101,6 +101,7 @@ h3{
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .features-cards-container{
     display: flex;
     justify-content: center;
@@ -112,6 +113,9 @@ h3{
 =======
 
 >>>>>>> f36fe9adbab60df7bbf3fca150a7426e31f68a86
+=======
+
+>>>>>>> fb87ddc4982b54204af371b0ecc8a07449d5f622
 .feature-card{
     display: flex;
     flex-direction: column;
@@ -123,11 +127,16 @@ h3{
     border-style: solid;
     margin-bottom: 20px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 100%;
 =======
     width: 90%;
     height: 200px;
 >>>>>>> f36fe9adbab60df7bbf3fca150a7426e31f68a86
+=======
+    width: 90%;
+    height: 200px;
+>>>>>>> fb87ddc4982b54204af371b0ecc8a07449d5f622
 }
 .feature-card h3{
     color: #025157;
@@ -154,11 +163,17 @@ h3{
     border-width: 1px;
     border-style: solid;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 5px;
 >>>>>>> fc9ebe2a20c301f4d57c2e91990adbd7ec4a0da6
+=======
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+>>>>>>> fb87ddc4982b54204af371b0ecc8a07449d5f622
 }
 .users-section{
     display: flex;
@@ -272,6 +287,7 @@ h3{
 .table-c31{grid-area: t31;}
 .compare-section{
     width: 100%;
+    text-align: center;
 }
 .compare-section h2{
     text-align: center;
